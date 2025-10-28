@@ -13,11 +13,11 @@ except Exception as e:
     st.exception(e)  # <-- shows full traceback
     st.stop()
     
-os.environ["USER_AGENT"] = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/141.0.0.0 Safari/537.36"
-)
+# os.environ["USER_AGENT"] = (
+#     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+#     "AppleWebKit/537.36 (KHTML, like Gecko) "
+#     "Chrome/141.0.0.0 Safari/537.36"
+# )
 # -------------------------------------------------------
 
 # -------------------- Optional USER_AGENT --------------------
@@ -210,6 +210,7 @@ if __name__ == "__main__":
 # if __name__ == "__main__":
 #     st.set_page_config(layout="wide", page_title="Cold Email Generator", page_icon="📧")
 #     create_streamlit_app()
+
 
 
 
