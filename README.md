@@ -61,6 +61,5 @@ This project uses **LLaMA 3.1** as the core model for text generation and intell
 **Balchander Reddy Yedla**  
 
 
-## 🛠 Skills
-Javascript, HTML, CSS...
+
 
