@@ -6,7 +6,7 @@ try:
     from chains import Chain
     from utils import clean_text, extract_text_from_pdf
 
-    st.write("✅ Imports OK!")
+    # st.write("✅ Imports OK!")
 
 except Exception as e:
     st.error("❌ Error loading app:")
@@ -80,5 +80,6 @@ if __name__ == "__main__":
     chain = Chain()
     st.set_page_config(layout="wide", page_title="Cold Email Generator", page_icon="📧")
     create_streamlit_app(chain)
+
 
 
