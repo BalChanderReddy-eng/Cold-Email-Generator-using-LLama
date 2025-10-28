@@ -1,6 +1,8 @@
 streamlit
 langchain
+langchain-groq
+langchain-community
 beautifulsoup4
 python-dotenv
 PyPDF2
-langchain_groq
+pdfplumber
