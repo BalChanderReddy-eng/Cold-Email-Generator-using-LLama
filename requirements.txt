@@ -3,3 +3,4 @@ langchain
 beautifulsoup4
 python-dotenv
 PyPDF2
+langchain_groq
