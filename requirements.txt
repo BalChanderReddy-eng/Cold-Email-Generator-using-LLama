@@ -1,0 +1,5 @@
+streamlit
+langchain
+beautifulsoup4
+python-dotenv
+PyPDF2
