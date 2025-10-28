@@ -1,17 +1,17 @@
 import streamlit as st
-import traceback
+# import traceback
 
-try:
-    from langchain_community.document_loaders import WebBaseLoader
-    from chains import Chain
-    from utils import clean_text, extract_text_from_pdf
+# try:
+#     from langchain_community.document_loaders import WebBaseLoader
+#     from chains import Chain
+#     from utils import clean_text, extract_text_from_pdf
 
-    st.write("✅ Imports OK!")
+#     st.write("✅ Imports OK!")
 
-except Exception as e:
-    st.error("❌ Error loading app:")
-    st.exception(e)  # <-- shows full traceback
-    st.stop()
+# except Exception as e:
+#     st.error("❌ Error loading app:")
+#     st.exception(e)  # <-- shows full traceback
+#     st.stop()
 
 # -------------------------------------------------------
 
@@ -80,4 +80,5 @@ if __name__ == "__main__":
     chain = Chain()
     st.set_page_config(layout="wide", page_title="Cold Email Generator", page_icon="📧")
     create_streamlit_app(chain)
+
 
