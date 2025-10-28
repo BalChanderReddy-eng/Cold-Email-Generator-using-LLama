@@ -1,6 +1,6 @@
 import streamlit as st
+import traceback
 
-# -------------------- DEBUG WRAPPER --------------------
 try:
     from langchain_community.document_loaders import WebBaseLoader
     from chains import Chain
@@ -9,8 +9,10 @@ try:
     st.write("✅ Imports OK!")
 
 except Exception as e:
-    st.error(f"❌ Error loading app: {e}")
-    st.stop()  # Stop further execution if imports fail
+    st.error("❌ Error loading app:")
+    st.exception(e)  # <-- shows full traceback
+    st.stop()
+
 # -------------------------------------------------------
 
 # -------------------- Optional USER_AGENT --------------------
@@ -78,3 +80,4 @@ if __name__ == "__main__":
     chain = Chain()
     st.set_page_config(layout="wide", page_title="Cold Email Generator", page_icon="📧")
     create_streamlit_app(chain)
+
