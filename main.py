@@ -2,6 +2,10 @@ import streamlit as st
 from langchain_community.document_loaders import WebBaseLoader
 from chains import Chain
 from utils import clean_text, extract_text_from_pdf
+import os
+os.environ["USER_AGENT"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+
+
 
 
 def create_streamlit_app(chain):
@@ -74,3 +78,4 @@ if __name__ == "__main__":
     chain = Chain()
     st.set_page_config(layout="wide", page_title="Cold Email Generator", page_icon="📧")
     create_streamlit_app(chain)
+
